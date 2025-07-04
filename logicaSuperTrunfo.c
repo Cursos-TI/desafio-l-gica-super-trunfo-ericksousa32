@@ -12,9 +12,9 @@ int main(){
     int pontos1 , pontos2;
 
     float densidade1, densidade2;
-	double perCapita1, perCapita2;
-
-	double soma1, soma2;
+    double perCapita1, perCapita2;
+	
+    double soma1, soma2;
 
     printf("Bem-vindo ao jogo Super Trunfo!\n");
     printf("Por favor, insira os dados da primeira carta.\n");
@@ -59,18 +59,18 @@ int main(){
     densidade2 = (float)pop2 / area2;
     perCapita2 = (double)(pib2 * 1000000000.0) / (double)pop2;
 
-	// Menu interativo para comparação dos atributos.
-	printf("\nVamos comparar?:\n");
-	printf("\n1 - Informações gerais das cidades\n");
-	printf("2 - População\n");
-	printf("3 - Área\n");
-	printf("4 - PIB\n");
-	printf("5 - Número de Pontos Turísticos\n");
-	printf("6 - Densidade Populacional\n");
-	printf("7 - PIB per Capita\n");
+    // Menu interativo para comparação dos atributos.
+    printf("\nVamos comparar?:\n");
+    printf("\n1 - Informações gerais das cidades\n");
+    printf("2 - População\n");
+    printf("3 - Área\n");
+    printf("4 - PIB\n");
+    printf("5 - Número de Pontos Turísticos\n");
+    printf("6 - Densidade Populacional\n");
+    printf("7 - PIB per Capita\n");
 
-	printf("\nSelecione uma opção a ser comparada: ");
-	scanf("%d", &menu1);
+    printf("\nSelecione uma opção a ser comparada: ");
+    scanf("%d", &menu1);
 
     switch(menu1){ // Cada case exibirá uma versão diferente do menu com base na opção escolhida anteriormente, excluindo-a da lista.
         case 1:
@@ -143,7 +143,7 @@ int main(){
     }
 
     printf("\nSelecione outra opção a ser comparada: ");
-	scanf("%d", &menu2);
+    scanf("%d", &menu2);
 
     if(menu2 < 1 || menu2 > 5){
         printf("Opção Inválida!\n");
