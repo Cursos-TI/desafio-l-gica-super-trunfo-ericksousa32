@@ -341,7 +341,7 @@ int main(){
                     }
 
                     soma1 = (double)pop1 + (pib1 * 1000000000.0);
-                    soma2 = (double)pop2 + (pib1 * 1000000000.0);
+                    soma2 = (double)pop2 + (pib2 * 1000000000.0);
                     break;
                 case 2: // Área
                     printf("\nAtributo de comparação: Área\n");
