@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	// Declarando variáveis.
+    // Declarando variáveis.
     int menu1, menu2;
 
     char cidade1[25], cidade2[25];
@@ -652,10 +652,12 @@ int main(){
             break;
     }
 
+    // Imprime o resultado da soma dos atributos para cada cidade e decide o vencedor da rodada.
+
     printf("\n***Soma dos dois atributos***\n");
     printf("%s: %.2lf\n", cidade1, soma1);
     printf("%s: %.2lf\n", cidade2, soma2);
-    printf("\nVencedor da soma: ");
+    printf("\nVencedor da rodada: ");
 
     if(soma1 == soma2){
         printf("Empate!\n");
@@ -663,5 +665,5 @@ int main(){
         soma1 > soma2 ? printf("%s\n", cidade1) : printf("\%s\n", cidade2);
     }
 
-	return 0;
+    return 0;
 }
