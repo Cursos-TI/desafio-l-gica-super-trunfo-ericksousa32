@@ -145,6 +145,11 @@ int main(){
     printf("\nSelecione outra opção a ser comparada: ");
 	scanf("%d", &menu2);
 
+    if(menu2 < 1 || menu2 > 5){
+        printf("Opção Inválida!\n");
+        return 0;
+    }
+
     switch(menu1){ // Cada case corresponde a uma opção escolhida no menu1 e possui switchs internos de acordo com a opção escolhida no menu2.
         case 2: // A população será comparada junto de algum outro atributo e a soma deles será calculada.
             printf("\nAtributo de comparação: População\n");
@@ -228,9 +233,6 @@ int main(){
                     soma1 = (double)pop1 + perCapita1;
                     soma2 = (double)pop2 + perCapita2;
                     break;
-                default:
-                    printf("Opção Inválida!\n");
-                    return 0;
             }
             break;
         case 3: // A Área será comparada junto de algum outro atributo e a soma deles será calculada.
@@ -314,9 +316,6 @@ int main(){
                     soma1 = (double)area1 + perCapita1;
                     soma2 = (double)area2 + perCapita2;
                     break;
-                default:
-                    printf("Opção Inválida!\n");
-                    return 0;
             }
             break;
         case 4: // O PIB será comparado junto de algum outro atributo e a soma deles será calculada.
@@ -400,9 +399,6 @@ int main(){
                     soma1 = (pib1 * 1000000000.0) + perCapita1;
                     soma2 = (pib2 * 1000000000.0) + perCapita2;
                     break;
-                default:
-                    printf("Opção Inválida!\n");
-                    return 0;
             }
             break;
         case 5: // O Número de Pontos Turísticos será comparado junto de algum outro atributo e a soma deles será calculada.
@@ -486,9 +482,6 @@ int main(){
                     soma1 = (double)pontos1 + perCapita1;
                     soma2 = (double)pontos2 + perCapita2;
                     break;
-                default:
-                    printf("Opção Inválida!\n");
-                    return 0;
             }
             break;
         case 6: // A Densidade Populacional será comparada junto de algum outro atributo e a soma deles será calculada.
@@ -572,9 +565,6 @@ int main(){
                     soma1 = (double)(1.0 / densidade1) + perCapita1;
                     soma2 = (double)(1.0 / densidade2) + perCapita2;
                     break;
-                default:
-                    printf("Opção Inválida!\n");
-                    return 0;
             }
             break;
         case 7: // O PIB per Capita será comparado junto de algum outro atributo e a soma deles será calculada.
@@ -658,9 +648,6 @@ int main(){
                     soma1 = perCapita1 + (double)(1.0 / densidade1);
                     soma2 = perCapita2 + (double)(1.0 / densidade2);
                     break;
-                default:
-                    printf("Opção Inválida!\n");
-                    return 0;
             }
             break;
     }
